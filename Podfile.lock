@@ -1,16 +1,20 @@
 PODS:
   - FlexLayout (1.3.20)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - FlexLayout
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - FlexLayout
+    - SnapKit
 
 SPEC CHECKSUMS:
   FlexLayout: 025dd153bd5618dcc9f93ef914106d7dc2a86fdc
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: dda1080aaaccb1db3c0aeaba1e40a22dd7d79f5a
+PODFILE CHECKSUM: 89b1bca4019708da0a7c81e02f148cd3d2723be5
 
 COCOAPODS: 1.9.1

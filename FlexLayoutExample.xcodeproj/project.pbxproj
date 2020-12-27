@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0825F16B25983FED0012FD38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825F16A25983FED0012FD38 /* AppDelegate.swift */; };
-		0825F16F25983FED0012FD38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825F16E25983FED0012FD38 /* ViewController.swift */; };
+		0825F16F25983FED0012FD38 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825F16E25983FED0012FD38 /* MainViewController.swift */; };
 		0825F17425983FED0012FD38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0825F17325983FED0012FD38 /* Assets.xcassets */; };
 		0825F17725983FED0012FD38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825F17525983FED0012FD38 /* LaunchScreen.storyboard */; };
 		0825F18225983FED0012FD38 /* FlexLayoutExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825F18125983FED0012FD38 /* FlexLayoutExampleTests.swift */; };
 		0825F18D25983FED0012FD38 /* FlexLayoutExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825F18C25983FED0012FD38 /* FlexLayoutExampleUITests.swift */; };
+		08CB06CC259845C900472D48 /* Example1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB06CB259845C900472D48 /* Example1View.swift */; };
 		19D150BD37C59995E160D0BC /* Pods_FlexLayoutExample_FlexLayoutExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974D62DCD6A9840202246060 /* Pods_FlexLayoutExample_FlexLayoutExampleUITests.framework */; };
 		6926F1043257630A45B1DF8D /* Pods_FlexLayoutExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9626D686CD49965AFFC0BA /* Pods_FlexLayoutExample.framework */; };
 		99F106261508B89B57B2374D /* Pods_FlexLayoutExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694A50EB7BAD208D8D4A4B75 /* Pods_FlexLayoutExampleTests.framework */; };
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0825F16725983FED0012FD38 /* FlexLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825F16A25983FED0012FD38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0825F16E25983FED0012FD38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0825F16E25983FED0012FD38 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0825F17325983FED0012FD38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0825F17625983FED0012FD38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0825F17825983FED0012FD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		0825F18C25983FED0012FD38 /* FlexLayoutExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutExampleUITests.swift; sourceTree = "<group>"; };
 		0825F18E25983FED0012FD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		083657D2FA28B1A0B2D31158 /* Pods-FlexLayoutExample-FlexLayoutExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLayoutExample-FlexLayoutExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlexLayoutExample-FlexLayoutExampleUITests/Pods-FlexLayoutExample-FlexLayoutExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		08CB06CB259845C900472D48 /* Example1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1View.swift; sourceTree = "<group>"; };
 		19BB1F251A7669573959C5D0 /* Pods-FlexLayoutExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLayoutExample.debug.xcconfig"; path = "Target Support Files/Pods-FlexLayoutExample/Pods-FlexLayoutExample.debug.xcconfig"; sourceTree = "<group>"; };
 		694A50EB7BAD208D8D4A4B75 /* Pods_FlexLayoutExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexLayoutExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9626D686CD49965AFFC0BA /* Pods_FlexLayoutExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexLayoutExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,8 +114,9 @@
 		0825F16925983FED0012FD38 /* FlexLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				08CB06C72598445B00472D48 /* FlexLayouts */,
 				0825F16A25983FED0012FD38 /* AppDelegate.swift */,
-				0825F16E25983FED0012FD38 /* ViewController.swift */,
+				0825F16E25983FED0012FD38 /* MainViewController.swift */,
 				0825F17325983FED0012FD38 /* Assets.xcassets */,
 				0825F17525983FED0012FD38 /* LaunchScreen.storyboard */,
 				0825F17825983FED0012FD38 /* Info.plist */,
@@ -137,6 +140,14 @@
 				0825F18E25983FED0012FD38 /* Info.plist */,
 			);
 			path = FlexLayoutExampleUITests;
+			sourceTree = "<group>";
+		};
+		08CB06C72598445B00472D48 /* FlexLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				08CB06CB259845C900472D48 /* Example1View.swift */,
+			);
+			path = FlexLayouts;
 			sourceTree = "<group>";
 		};
 		7FF04F17CB4AE58272F06DBD /* Frameworks */ = {
@@ -399,8 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0825F16F25983FED0012FD38 /* ViewController.swift in Sources */,
+				0825F16F25983FED0012FD38 /* MainViewController.swift in Sources */,
 				0825F16B25983FED0012FD38 /* AppDelegate.swift in Sources */,
+				08CB06CC259845C900472D48 /* Example1View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

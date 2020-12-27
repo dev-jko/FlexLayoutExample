@@ -7,6 +7,7 @@ target 'FlexLayoutExample' do
 
   # Pods for FlexLayoutExample
   pod 'FlexLayout'
+  pod 'SnapKit'
 
   target 'FlexLayoutExampleTests' do
     inherit! :search_paths
